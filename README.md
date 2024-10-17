@@ -5,6 +5,7 @@ Here's a beautifully crafted and attractive GitHub README template for your Reac
 # 🎯 React Quiz App
 
 ![React Quiz App Banner](https://your-image-link.com) <!-- Add a relevant image or banner for visual appeal -->
+![Uploading chrome-capture-2024-10-17.gif…]()
 
 Welcome to the **React Quiz App**! This app is designed to help you sharpen your knowledge of **React Core Concepts** in a fun and engaging way! Test your React skills, answer timed questions, and aim for a high score!
 
