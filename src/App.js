@@ -15,7 +15,8 @@ const initialState = {
   currentQuestion: 0,
   answer : null,
   points :0,
-  highScore:0
+  highScore:0,
+  remainingSeconds:5
 }
 
 function reducer(state, action) {
@@ -43,7 +44,7 @@ function reducer(state, action) {
         ...state,
         answer:action.payload,
         points : action.payload === question.correctOption 
-        ? state.points + question.points 
+        ? state.points + question.points
         : state.points
       }
     case 'nextQuestion':
@@ -60,6 +61,19 @@ function reducer(state, action) {
           highScore : Math.max(state.highScore, state.points)
         
         }
+        case 'restart':
+          return{
+            ...initialState,
+            questions:state.questions,
+            status:'ready'
+          }
+          case 'tick':
+            return{
+              ...state,
+              remainingSeconds : state.remainingSeconds -1,
+              status : state.remainingSeconds <= 0 ? 'finished' : 'active'
+
+            }
 
     default:
       throw new Error('No opertion supported')
@@ -96,7 +110,7 @@ const App = () => {
         </> 
         }
 
-        {status ==="finished" && <FinishScreen totalsPoints={totalsPoints} points={points} highScore={highScore}/>}
+        {status ==="finished" && <FinishScreen totalsPoints={totalsPoints} points={points} highScore={highScore} dispatch={dispatch}/>}
       </main>
     </div>
   )
