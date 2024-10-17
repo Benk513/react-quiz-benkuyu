@@ -1,0 +1,5 @@
+points :0
+const question  = state.questions.at(state.currentQuestion)
+ points: action.payload === question.correctOption
+        ? state.points + question.points
+        : state.points,
