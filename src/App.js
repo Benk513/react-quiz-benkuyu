@@ -16,7 +16,7 @@ const initialState = {
   answer : null,
   points :0,
   highScore:0,
-  remainingSeconds:5
+  remainingSeconds:15*15
 }
 
 function reducer(state, action) {
@@ -82,7 +82,7 @@ function reducer(state, action) {
 
 const App = () => {
 
-  const [{ questions, status ,currentQuestion , answer ,points,highScore}, dispatch] = useReducer(reducer, initialState)
+  const [{ questions, status ,currentQuestion , answer ,points,highScore, remainingSeconds}, dispatch] = useReducer(reducer, initialState)
 
   const totalsPoints = questions.reduce((prev , curr) => prev +curr.points ,0)
   const numQuestions = questions.length
@@ -106,7 +106,7 @@ const App = () => {
         {status === "active" && <>
         <Progress currentQuestion={currentQuestion} numQuestions={numQuestions} points={points} totalsPoints={totalsPoints} answer={answer}
         />
-        <Question question={questions[currentQuestion]} answer={answer} dispatch= {dispatch} currentQuestion={currentQuestion} numQuestions={numQuestions}/>
+        <Question question={questions[currentQuestion]} answer={answer} dispatch= {dispatch} currentQuestion={currentQuestion} numQuestions={numQuestions} remainingSeconds={remainingSeconds}/>
         </> 
         }
 

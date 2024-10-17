@@ -4,7 +4,7 @@ import NextQuestion from './NextQuestion';
 import Timer from './Timer';
 import Footer from './Footer';
 
-const Question = ({question , answer , dispatch,currentQuestion , numQuestions}) => {
+const Question = ({question , answer , dispatch,currentQuestion , numQuestions,remainingSeconds}) => {
 
     console.log(question)
   return (
@@ -17,7 +17,7 @@ const Question = ({question , answer , dispatch,currentQuestion , numQuestions})
 
 
 <Footer>
-    <Timer/>
+    <Timer remainingSeconds={remainingSeconds} dispatch={dispatch}/>
     <NextQuestion dispatch={dispatch} answer={answer} currentQuestion={currentQuestion} numQuestions={numQuestions}/>
 </Footer>
 
