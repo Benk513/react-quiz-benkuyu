@@ -1,7 +1,3 @@
-Here's a beautifully crafted and attractive GitHub README template for your React Quiz App:
-
----
-
 # 🎯 React Quiz App
 
 ![React Quiz App ](https://github.com/user-attachments/assets/793ddc61-5d3f-45eb-b76f-07a269c810e6)
@@ -33,7 +29,6 @@ Welcome to the **React Quiz App**! This app is designed to help you sharpen your
 ![Answers](https://github.com/user-attachments/assets/34b64177-8710-4109-9331-bca5394cf32e)
 ![Finished](https://github.com/user-attachments/assets/7ee1a867-a905-4433-a8b3-650c37eb137e)
 ### High Score Board
-![High Score](https://your-image-link.com)
 
 ## 🎮 How to Play
 
@@ -131,3 +126,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Feel free to customize it further with links, images, and badges that fit your project!
+##Developped by Ben Kuyu
