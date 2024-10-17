@@ -26,11 +26,12 @@ Welcome to the **React Quiz App**! This app is designed to help you sharpen your
 ## 📸 Screenshots
 
 ### Home Screen
-![Home Screen](https://your-image-link.com)
+![Home Screen](https://github.com/user-attachments/assets/b95961f7-6812-4e0a-92ed-b3a2c8d2f33d)
 
 ### Quiz In Action
-![Quiz Screen](https://your-image-link.com)
-
+![Quiz](https://github.com/user-attachments/assets/14268ef6-5d95-4449-bce9-15ee1465005f)
+![Answers](https://github.com/user-attachments/assets/34b64177-8710-4109-9331-bca5394cf32e)
+![Finished](https://github.com/user-attachments/assets/7ee1a867-a905-4433-a8b3-650c37eb137e)
 ### High Score Board
 ![High Score](https://your-image-link.com)
 
